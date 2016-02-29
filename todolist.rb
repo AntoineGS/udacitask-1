@@ -10,7 +10,9 @@ class TodoList
   def add_item(new_item)
     item = Item.new(new_item)
     @items.push(item)
+  end
 end
+
 
 class Item
   # methods and stuff go here
