@@ -16,10 +16,12 @@ class TodoList
     items.delete_at(line-1)
   end
 
-  def print
+  def print(completed=true) #Formatted output
     puts "Todo List:"
     items.each_with_index do |val, index|
-      puts "#{index+1}: #{val.description} (#{val.completion == true ? "completed" : "incomplete"})"
+      if ((val.isCompleted? == true && completed == false) or completed == true)
+        puts "#{index+1}: #{val.description} (#{val.isCompleted? == true ? "completed" : "incomplete"})"
+      end
     end
     puts "\n"
   end
@@ -31,13 +33,12 @@ class Item
   # methods and stuff go here
   attr_accessor :description, :completion
 
+  def isCompleted? #Returns true if item has been completed
+    completion==true
+  end
+
   def initialize(item_description)
     @description = item_description
     @completion = false
   end
-
-  def isCompleted?(item)
-    item.completion==true
-  end
-
 end
