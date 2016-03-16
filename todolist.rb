@@ -12,6 +12,10 @@ class TodoList
     @items.push(item)
   end
 
+  def deleteFirstItem
+    items.shift
+  end
+ 
   def print
     items.each_with_index do |val, index|
       puts "Item #{index}: #{val.description} (#{val.completion == true ? "completed" : "incomplete"})"

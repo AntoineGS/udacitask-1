@@ -13,9 +13,11 @@ job.add_item("4PM leave the office silently")
 job.print
 
 # Delete the first item
+job.deleteFirstItem
 
 # Print the list
-
+job.print
+ 
 # Delete the second item
 
 # Print the list
