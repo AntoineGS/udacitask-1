@@ -1,7 +1,6 @@
 class TodoList
   # methods and stuff go here
   attr_accessor :title, :items
-  attr_writer :title
 
   def initialize(list_title)
     @title = list_title
@@ -13,13 +12,17 @@ class TodoList
     @items.push(item)
   end
 
+  def rename(new_title) #changes the title
+    @title=new_title
+  end
+
   def delete(line) #deletes an Item
-    items.delete_at(line-1)
+    @items.delete_at(line-1)
   end
 
   def print(completed=true) #Formatted output
     puts "Todo List: #{title}"
-    items.each_with_index do |val, index|
+    @items.each_with_index do |val, index|
       if ((val.isCompleted? == true && completed == false) or completed == true)
         puts "#{index+1}: #{val.description} (#{val.isCompleted? == true ? "completed" : "incomplete"})"
       end
@@ -28,7 +31,7 @@ class TodoList
   end
 
   def isCompleted(line,bool) #Checks if item is completed
-    items[line-1].completion = bool
+    @items[line-1].completion = bool
   end
 
 end
@@ -39,7 +42,7 @@ class Item
   attr_accessor :description, :completion
 
   def isCompleted? #Returns true if item has been completed
-    completion==true
+    @completion==true
   end
 
   def initialize(item_description)
