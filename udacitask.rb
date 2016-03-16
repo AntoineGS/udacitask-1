@@ -31,5 +31,7 @@ job.isCompleted(1,true)
 job.print
 
 # Update the title of the list
+job.title = "GoodStuff"
 
 # Print the list
+job.print
