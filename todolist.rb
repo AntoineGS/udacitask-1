@@ -11,6 +11,13 @@ class TodoList
     item = Item.new(new_item)
     @items.push(item)
   end
+
+  def print
+    items.each_with_index do |val, index|
+      puts "Item #{index}: #{val.description} (#{val.completion == true ? "completed" : "incomplete"})"
+    end
+  end
+
 end
 
 
@@ -23,6 +30,8 @@ class Item
     @completion = false
   end
 
-  def isCompleted?(Item)
-    Item.completion==true  
+  def isCompleted?(item)
+    item.completion==true
+  end
+
 end
