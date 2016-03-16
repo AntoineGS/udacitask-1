@@ -13,14 +13,16 @@ job.add_item("4PM leave the office silently")
 job.print
 
 # Delete the first item
-job.deleteFirstItem
+job.delete(1)
 
 # Print the list
 job.print
- 
+
 # Delete the second item
+job.delete(2)
 
 # Print the list
+job.print
 
 # Update the completion status of the first item to complete
 

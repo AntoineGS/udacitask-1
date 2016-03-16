@@ -12,14 +12,16 @@ class TodoList
     @items.push(item)
   end
 
-  def deleteFirstItem
-    items.shift
+  def delete(line)
+    items.delete_at(line-1)
   end
- 
+
   def print
+    puts "Todo List:"
     items.each_with_index do |val, index|
-      puts "Item #{index}: #{val.description} (#{val.completion == true ? "completed" : "incomplete"})"
+      puts "#{index+1}: #{val.description} (#{val.completion == true ? "completed" : "incomplete"})"
     end
+    puts "\n"
   end
 
 end
