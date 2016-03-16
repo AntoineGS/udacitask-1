@@ -26,6 +26,10 @@ class TodoList
     puts "\n"
   end
 
+  def isCompleted(line,bool)
+    items[line-1].completion = bool
+  end
+
 end
 
 

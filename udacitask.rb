@@ -25,8 +25,10 @@ job.delete(2)
 job.print
 
 # Update the completion status of the first item to complete
+job.isCompleted(1,true)
 
 # Print the list
+job.print
 
 # Update the title of the list
 
