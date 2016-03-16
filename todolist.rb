@@ -23,8 +23,8 @@ class TodoList
   def print(completed=true) #Formatted output
     puts "Todo List: #{title}"
     @items.each_with_index do |val, index|
-      if ((val.isCompleted? == true && completed == false) or completed == true)
-        puts "#{index+1}: #{val.description} (#{val.isCompleted? == true ? "completed" : "incomplete"})"
+      if ((val.isCompleted? == true && completed == false) or completed == true) #Just because.
+        puts "#{index+1}: #{val.print}"
       end
     end
     puts "\n"
@@ -43,6 +43,10 @@ class Item
 
   def isCompleted? #Returns true if item has been completed
     @completion==true
+  end
+
+  def print #Print of item (though it could just have easily been done at the list level)
+    "#{@description} (#{isCompleted? == true ? "completed" : "incomplete"})"
   end
 
   def initialize(item_description)
