@@ -8,7 +8,7 @@ job.add_item("11AM call with Jhonny")
 job.add_item("Finish documentation")
 job.add_item("4PM leave the office silently")
 # Print the list
-
+print job.items
 # Delete the first item
 
 # Print the list

@@ -22,4 +22,7 @@ class Item
     @description = item_description
     @completion = false
   end
+
+  def isCompleted?(Item)
+    Item.completion==true  
 end
