@@ -23,15 +23,21 @@ class TodoList
   def print(completed=true) #Formatted output
     puts "Todo List: #{title}"
     @items.each_with_index do |val, index|
-      if ((val.isCompleted? == true && completed == false) or completed == true) #Just because, Feature 1/3.
+      if ((val.isCompleted? == true && completed == false) or completed == true) #Filtering based on status, Feature 1/3.
         puts "#{index+1}: #{val.print}"
       end
     end
     puts "\n"
   end
 
-  def sort
-    @items.sort
+  def sort #Sorting of array based on description, Feature 2/3
+    @items.sort! {|a,b| a.description.downcase <=> b.description.downcase}
+  end
+
+  def allCompleted(bool) #Changes the status of all items to completed or incomplete, Feature 3/3
+    @items.each do |val|
+      val.completion = bool
+    end
   end
 
   def isCompleted(line,bool) #Checks if item is completed

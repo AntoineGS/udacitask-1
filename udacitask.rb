@@ -34,5 +34,4 @@ job.print
 job.rename("GoodStuff")
 
 # Print the list
-job.sort
 job.print
