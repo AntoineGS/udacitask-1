@@ -1,0 +1,89 @@
+commit e14172f5cb64049685c394c2e7a991791f02c950
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Wed Mar 16 20:06:34 2016 -0400
+
+    todolist.rb: Added last 2 features, TodoList.sort and TodoList.allCompleted
+
+commit f95503adc658d8c38e50e064923d9fb5e03d09c7
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Wed Mar 16 19:58:21 2016 -0400
+
+    todolist.rb: created a Item.print method and changed the print methods accordingly
+
+commit 6e44e8f0890eec368ce76637e15560a3066cb4a6
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Wed Mar 16 19:56:38 2016 -0400
+
+    todolist.rb: created a Item.print method and changed the print methods accordingly
+
+commit caa9f1fb17c29d9f6e7bd0dfabcb5e199eae172c
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Wed Mar 16 19:48:17 2016 -0400
+
+    todlist.rb: removed the title.attr_writer for a method as per the README.md
+
+commit d002b679ebc15b9eb87a039324a662fdcbe9f977
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Wed Mar 16 19:42:19 2016 -0400
+
+    todolist.rb: Added Title to TodoList.print, added TodoList.attr_writer for Title, udacitask.rb: added title edit and last print
+
+commit 79624d5672642fff36298b0ee22c503d8e918094
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Tue Mar 15 21:21:37 2016 -0400
+
+    udacitask.rb: addition of item completion call and print, todolist.rb: Addition of TodoList.isCompleted
+
+commit 9a4094bbd787fc0cd3da02c989df932eb4cb42b7
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Tue Mar 15 21:11:03 2016 -0400
+
+    todolist.rb: addition of completion filter on TodoList.print, fix of Item.isCompleted?
+
+commit bd3a9655a2f1d06034f6b748fd3c3ac3f4d66567
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Tue Mar 15 20:59:39 2016 -0400
+
+    todolist.rb: Estetics work on output, removal of deleteFirstList for a more generic delete(lineid)
+
+commit 2dd70d5652632a702340a918cf820e6d5eff1b2d
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Tue Mar 15 20:54:47 2016 -0400
+
+    Added todolist.rb : deleteFirstItem and udacitask.rb : delete first item and print
+
+commit 6b12b6f6d2bc58317ef91c95570a683397264b07
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Tue Mar 15 20:49:09 2016 -0400
+
+    Completed TodoList.print
+
+commit 773b8a358940428de6503be975dfc556a456ebf4
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Tue Mar 15 20:41:26 2016 -0400
+
+    Creation of todolist.rb Item.isCompleted? and started work on TodoList.print
+
+commit 3da0f07934a77e4184793ad87dc5089485a759da
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Tue Mar 15 20:17:40 2016 -0400
+
+    Added creation of list and items to todolist.rb
+
+commit 3a76053dfe255b81059802d17f04e8995de479db
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Feb 28 23:18:16 2016 -0500
+
+    Initial commit
+
+commit a463aac558522539a92baf51945e3aff763fe584
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sat Jan 30 20:03:10 2016 -0500
+
+    Added add_item method and Item class initialize method
+
+commit 00b7287ebc2c89ea219f203e88e40dcddc65f74d
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sat Jan 30 19:38:06 2016 -0500
+
+    Initial Commit
