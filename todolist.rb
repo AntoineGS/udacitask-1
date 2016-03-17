@@ -12,10 +12,6 @@ class TodoList
     @items.push(item)
   end
 
-  def rename(new_title) #changes the title
-    @title=new_title
-  end
-
   def delete(line) #deletes an Item
     @items.delete_at(line-1)
   end
@@ -23,11 +19,11 @@ class TodoList
   def print(completed=true) #Formatted output
     puts "Todo List: #{title}"
     @items.each_with_index do |val, index|
-      if ((val.is_completed? == true && completed == false) or completed == true) #Filtering based on status, Feature 1/3.
+      if completed or (val.is_completed? && !completed) #Filtering based on status, Feature 1/3.
         puts "#{index+1}: #{val.print}"
       end
     end
-    puts "\n"
+    puts
   end
 
   def sort #Sorting of array based on description, Feature 2/3
@@ -54,7 +50,7 @@ class Item
     @completion==true
   end
 
-  def print #Print of item (though it could just have easily been done at the list level)
+  def print #Print of item
     "#{@description} (#{is_completed? == true ? "completed" : "incomplete"})"
   end
 
