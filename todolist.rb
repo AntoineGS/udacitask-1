@@ -23,7 +23,7 @@ class TodoList
   def print(completed=true) #Formatted output
     puts "Todo List: #{title}"
     @items.each_with_index do |val, index|
-      if ((val.isCompleted? == true && completed == false) or completed == true) #Filtering based on status, Feature 1/3.
+      if ((val.is_completed? == true && completed == false) or completed == true) #Filtering based on status, Feature 1/3.
         puts "#{index+1}: #{val.print}"
       end
     end
@@ -34,13 +34,13 @@ class TodoList
     @items.sort! {|a,b| a.description.downcase <=> b.description.downcase}
   end
 
-  def allCompleted(bool) #Changes the status of all items to completed or incomplete, Feature 3/3
+  def all_completed(bool) #Changes the status of all items to completed or incomplete, Feature 3/3
     @items.each do |val|
       val.completion = bool
     end
   end
 
-  def isCompleted(line,bool) #Checks if item is completed
+  def is_completed(line,bool) #Checks if item is completed
     @items[line-1].completion = bool
   end
 end
@@ -50,12 +50,12 @@ class Item
   # methods and stuff go here
   attr_accessor :description, :completion
 
-  def isCompleted? #Returns true if item has been completed
+  def is_completed? #Returns true if item has been completed
     @completion==true
   end
 
   def print #Print of item (though it could just have easily been done at the list level)
-    "#{@description} (#{isCompleted? == true ? "completed" : "incomplete"})"
+    "#{@description} (#{is_completed? == true ? "completed" : "incomplete"})"
   end
 
   def initialize(item_description)

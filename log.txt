@@ -1,3 +1,9 @@
+commit 420c296f16c9e81fb166a3d15d21498b27affdff
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Wed Mar 16 20:10:59 2016 -0400
+
+    added git.log
+
 commit e14172f5cb64049685c394c2e7a991791f02c950
 Author: AntoineGS <antoineg.simard@gmail.com>
 Date:   Wed Mar 16 20:06:34 2016 -0400

@@ -1,0 +1,3 @@
+1) Filtering based on status (completed vs incomplete) added to the TodoList.print function
+2) Sorting of items array based on item description (TodoList.sort)
+3) Changes the status of all items to completed or incomplete (TodoList.all_completed)
